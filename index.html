@@ -1,11 +1,72 @@
-<!DOCTYPE html>
+<!-- Hopefully this page doesn't look... terrible -->
+
+<!-- btw if this sites code looks awful, lemme know, i am literally using a few html/css cheat sheet websites to do this, it is hell LMFAOOOO -->
+
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deakon Aesche - Portfolio</title>
-</head>
-<body>
-  <h1>Hello, World</h1>
-  <p>This is my first Github Page Site, do hold the line</p>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Brock - Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <div class="page-wrapper">
+        <!-- Main Heading -->
+        <h1 style="text-align: center;" id="title">Brock</h1>
+        <p style="text-align: center;">I am a Game Design Diploma Student studying at AIE, currently in my first year.</p>
+
+        <!-- Specifics on certain things -->
+        <hr class="horizontal-divider">
+
+        <p style="text-align: center;">Wanna see a certain bit of my work?</p>
+
+        <div class="option-row">
+        <button id="leveldesignBtn">Level Design</button>
+        <button id="gamedesignBtn">Game Design</button>
+        <button id="projectsBtn">Low-Poly 3D Models</button>
+        </div>
+
+        <hr class="horizontal-divider">
+
+        <!-- Small Blurbs on work -->
+        <h2 style="text-align: center;" id="subheadings">Sample of my work</h2>
+
+        <!-- Quake Level -->
+        <div class="content-box">
+            <div class="text-content">
+            <h2>Quake Level: Qarsqe.bsp</h2>
+
+                <p style="text-align: justify;">This level I designed in Quake was meant to help with understanding better how to design levels in general. Giving me pre-created items and ways to use them.</p>
+
+                <p><strong>Programs & Tools used:</strong></p>
+                <p>- Trenchbroom</p>
+                <p>- Quake Source Port: FTEQW</p>
+                <button onclick="window.location.href='qarsqe.html'">More Info here</button>
+
+            </div>
+     
+        <img src="Quake1.png" alt="Gameplay image where knights are chasing after the viewport in a gothic looking entrance." class="side-image">
+        </div>
+
+        <!-- DOOM Level -->
+        <div class="content-box">
+            <div class="text-content">
+            <h2>DOOM WAD: 'The Challenge.wad'</h2>
+
+                <p style="text-align: justify;">Much like one of my Quake levels, this was a way to help me understand how to design levels, from concept to completion.</p>
+
+                <p><strong>Programs & Tools used:</strong></p>
+                <p>- SLADE WAD Editor</p>
+                <p>- DOOM Source Port: UZDoom</p>
+                <p>- Photoshop (Basic Texture Editing)</p>
+                <button onclick="window.location.href='thechallengewad.html'">More Info here</button>
+            </div>
+     
+        <img src="Doom1.png" alt="Gameplay image where enemies are in a forest while one is being shot" class="side-image">
+        </div>
+        
+    </div>
+
+
+    </body>
+</html>
