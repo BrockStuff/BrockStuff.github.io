@@ -1,0 +1,79 @@
+<!-- Hopefully this page doesn't look... terrible -->
+
+<!-- btw if this sites code looks awful, lemme know, i am literally using a few html/css cheat sheet websites to do this, it is hell LMFAOOOO -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>TheChallenge.Wad</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <div class="page-wrapper">
+        <!-- Main Heading -->
+        <h1 style="text-align: center;" id="title">TheChallenge.wad</h1>
+        <p style="font-size: 9px; text-align: center;">Also known in-game as <strong> 'MMM 3'</strong></p>
+        <p style="text-align: center;">A DOOM Wad I made to learn how Level Design works</p>
+
+        <!-- Specifics on certain things -->
+        <hr class="horizontal-divider">
+
+        <p style="text-align: center;">Wanna see a certain bit of my work?</p>
+
+        <div class="option-row">
+        <button id="leveldesignBtn">Level Design</button>
+        <button id="gamedesignBtn">Game Design</button>
+        <button id="projectsBtn">Low-Poly 3D Models</button>
+        </div>
+
+        <hr class="horizontal-divider">        
+        
+        <img src="img/doom/DoomHeader.png" alt="Header image of a Forest Level from inside a brick wall room" class="image">
+
+        <div class="text">
+            <p style="text-align: justify;">Much like one of my Quake levels, this was a way to help me understand how to design levels, from concept to completion.</p>
+            
+            <div class="option-row">
+            <button onclick="DLChallenge()">Download WAD File & Setup Instructions</button>
+            </div>
+        </div>
+
+        <h2 style="text-align: center;" id="subheadings">The process of creating the DOOM WAD</h2>
+
+        <p style="text-align: justify;">The first thing I did when I was creating this WAD was thinking of what levels should be like. Should they be conventional DOOM-styled Levels? Should they take on some themes from DOOM's successor, Quake? How would any of the styles work? In the end I decided to do generally Castle theming, taking on (only partially) the darker, aged feeling of the levels in Quake.</p>
+
+        <p style="text-align: justify; margin-top: 25px;">When working on levels, the toolset felt complex, but as time continued, working with the tools got easier. The game is sector based, meaning I had to decide what a certain area did, as opposed to adding something like a trigger box down. This made it a little bit more challenging to get what I wanted done, but as with the tools themselves, the more I understood it, the better I got at using it.</p>
+
+        <div style="display: flex; justify-content: center;">
+        <img src="img/doom/M1CastleRev1.png" align="center" style="margin-top: 10px; margin-bottom: 10px" alt="A Castle Entrance that has large, grey bricks, with a bright red carpet spanning all the way to the door at the end." class="image">
+        </div>
+
+        <p style="text-align: justify;">The first version of the castle interior had grey bricks rather than the red bricks. The pillars seen in the final version are also missing. It was about the time when I next added the pillars when I did the brick texture change and the map itself started coming together into its final version.</p>
+
+        <h2 style="text-align: center;" id="subheadings">Level 1 Top-Down Map</h2>
+
+        <div style="display: flex; justify-content: center;">
+        <img src="img/doom/M1CastleMap.png" align="center" style="margin-top: 10px; margin-bottom: 10px" alt="A birds eye view of the final version of the first map in the WAD, essentially making a T-like shape." class="image">
+        </div>
+
+        <p style="text-align: justify;">This top-down version of my map is one of approx. 10 or so levels that were designed. All maps are playable in UZDoom, and files can be seen if you use SLADE.</p>
+
+        <p style="text-align: justify;">This was the predecessor to Qarsqe, the map I had made in Quake to learn more advanced tools.</p>
+        
+    </div>
+
+    <!-- In-Page Scripts -->
+    <script>
+        function DLChallenge() {
+            const a = document.createElement("a");
+            a.href = "./downloads/TheChallengeWAD.zip"; 
+            a.download = "";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+
+    </body>
+</html>
