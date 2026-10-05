@@ -41,7 +41,7 @@
             <p style="text-align: justify;">Much like one of my Quake levels, this was a way to help me understand how to design levels, from concept to completion. Using much more complex tools & software to do it. As well as Source Ports that allow for coloured lighting.</p>
 
             <div class="option-row">
-            <button onclick="window.location.href='qarsqedownload.html'">Download .bsp & .lit File & Setup Instructions</button>
+            <button onclick="DLQarsqe()">Download .bsp & .lit File & Setup Instructions</button>
             </div>
             
         </div>
@@ -94,6 +94,19 @@
 
     </div>
 
+
+        <!-- In-Page Scripts -->
+    <script>
+        function DLQarsqe() {
+            const a = document.createElement("a");
+            a.href = "./downloads/QarsqeMap.zip"; 
+            a.download = "";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+        
 
     </body>
 </html>
